@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let p = document.getElementById('target');
+    p.innerHTML="owned";
+    // console.log(p);
     // your code here
 
 })();

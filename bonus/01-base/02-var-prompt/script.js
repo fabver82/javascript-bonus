@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let person = prompt("Please enter your name");
+    alert(`Hello ${person}`);
     // your code here
 
 })();

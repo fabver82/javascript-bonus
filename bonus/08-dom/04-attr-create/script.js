@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let source = document.getElementById('source');
+    let link = source.getAttribute('data-image');
+    console.log(link);
     // your code here
+    let figure = document.getElementById('target');
+    let img = document.createElement('img');
+    img.src=link;
+    figure.insertAdjacentElement('afterbegin',img);
+    source.parentElement.removeChild(source);
 
 })();

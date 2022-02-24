@@ -24,5 +24,6 @@ const createList = movies => {
       .join(``)}
     </ol>`;
 };
-
+console.log(movies);
 document.write(createList(movies));
+console.log(movies);

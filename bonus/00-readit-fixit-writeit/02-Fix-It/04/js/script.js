@@ -1,3 +1,4 @@
+
 const tvshows = [
   `legion`,
   `sneaky pete`,
@@ -17,9 +18,11 @@ const tvshows = [
 ];
 
 const wrapWithTag = (content, tagname) => {
-  `<${tagname}>${content}</${tagname}>`;
+  return `<${tagname}>${content}</${tagname}>`;
 };
 
 document.write(`<ol>`);
-show.forEach(tvshows => document.write(wrapWithTag(show, `li`)));
+tvshows.forEach(show => {
+  document.write(wrapWithTag(show, `li`))
+});
 document.write(`</ol>`);

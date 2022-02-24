@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let p = document.querySelector('#target');
+    p.innerHTML="owned";
     // your code here
 
 })();

@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let elements = document.getElementsByClassName('target');
+    console.log(elements);
+    for(let i=0;i<elements.length;i++){
+        elements.item(i).innerHTML='owned';
+    }
     // your code here
 
 })();

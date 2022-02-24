@@ -11,5 +11,6 @@
 
 (function() {
     // your code here
-
+    let name = "hello world";
+    alert(`${name}`)
 })();
