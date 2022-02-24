@@ -11,10 +11,20 @@
 
 (function() {
     let target = document.getElementById('target');
+    let targetPartOne = target.innerText.slice(1,4);
+    console.log(targetPartOne);
     let partOne = document.getElementById('part-one');
     let partTwo = document.getElementById('part-two');
     let partThree = document.getElementById('part-three');
     let partFour = document.getElementById('part-four');
+
+    partOne.addEventListener('click',function(){
+        let currentValue = parseInt(partOne.innerText);
+        currentValue++;
+        partOne.innerText=currentValue;
+        targetPartOne = currentValue;
+        target.innerText=`+${targetPartOne}000000`;  
+    })
     // your code here
 
 })();
