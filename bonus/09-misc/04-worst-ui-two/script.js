@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let target = document.getElementById('target');
+    let partOne = document.getElementById('part-one');
+    let partTwo = document.getElementById('part-two');
+    let partThree = document.getElementById('part-three');
+    let partFour = document.getElementById('part-four');
     // your code here
 
 })();
