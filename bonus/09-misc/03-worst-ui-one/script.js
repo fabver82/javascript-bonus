@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    let target = document.getElementById('target');
+    let slide = document.getElementById('slider')
+    slide.oninput = function(){
+        target.innerHTML=`0${slide.value}`;
+    };
+    
+    
     // your code here
 
 })();
