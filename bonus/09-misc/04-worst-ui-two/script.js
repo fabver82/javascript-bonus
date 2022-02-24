@@ -12,18 +12,35 @@
 (function() {
     let target = document.getElementById('target');
     let targetPartOne = target.innerText.slice(1,4);
+    let targetPartTwo = target.innerText.slice(5,7);
+    let targetPartThree = target.innerText.slice(7,9);
+    let targetPartFour = target.innerText.slice(9,11);
     console.log(targetPartOne);
     let partOne = document.getElementById('part-one');
     let partTwo = document.getElementById('part-two');
     let partThree = document.getElementById('part-three');
     let partFour = document.getElementById('part-four');
 
+    //TODO:set up data min and max
     partOne.addEventListener('click',function(){
         let currentValue = parseInt(partOne.innerText);
-        currentValue++;
+        let min = parseInt(partOne.getAttribute('data-min'));
+        let max = parseInt(partOne.getAttribute('data-max'));
+        if (currentValue >= max){
+            currentValue = min;
+        }else{
+            currentValue++;
+        }
         partOne.innerText=currentValue;
         targetPartOne = currentValue;
-        target.innerText=`+${targetPartOne}000000`;  
+        target.innerText=`+${targetPartOne}${targetPartTwo}0000`;  
+    })
+    partTwo.addEventListener('click',function(){
+        let currentValue = parseInt(partTwo.innerText);
+        currentValue++;
+        partTwo.innerText=currentValue;
+        targetPartTwo = currentValue;
+        target.innerText=`+${targetPartOne}${targetPartTwo}0000`;  
     })
     // your code here
 
